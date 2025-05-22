@@ -673,7 +673,7 @@ def handle_key_presses(key, run_debug, eng_req, act_servo, board_state, board_de
     return run_debug, eng_req, act_servo, should_quit_flag
 
 def cleanup_resources(arm_controller, stockfish_engine, camera_capture):
-    print("Cleaning up...");
+    print("Cleaning up..."); 
     if arm_controller.pca is not None: arm_controller.release_servos()
     if stockfish_engine:
         try: stockfish_engine.quit()
